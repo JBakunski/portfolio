@@ -9,8 +9,10 @@ def home(request):
 
 
 def about(request):
-    return HttpResponse("About me page")
+    t = loader.get_template('infos/about.html')
+    return HttpResponse(t.render({'title': 'About'}))
 
 
 def contact(request):
-    return HttpResponse("Contact page")
+    t = loader.get_template('infos/contact.html')
+    return HttpResponse(t.render({'title': 'Contact'}))
