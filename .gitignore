@@ -1,5 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+infos/__pycache__/
+portfolio/__pycache__/
 *.py[cod]
 
 # C extensions
