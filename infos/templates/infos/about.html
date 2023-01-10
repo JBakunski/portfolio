@@ -1,6 +1,9 @@
 {% extends "infos/base.html" %}
 {% block title %} {{ title }} {% endblock title %}
 {% block content %}
+    {% load static %}
+    <img src="{% static 'infos/Snake_400x400.png' %}" class="img-thumbnail" alt="My photo">
     <h1> O mnie </h1>
     <h3>Strona w budowie...</h3>
+    <a href="{% url 'home' %}">Powrót do strony głównej...</a>
 {% endblock content %}
