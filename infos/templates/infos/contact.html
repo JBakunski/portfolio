@@ -1,7 +1,23 @@
 {% extends "infos/base.html" %}
 {% block title %} {{ title }} {% endblock title %}
 {% block content %}
-    <h1> Kontakt </h1>
-    <h3>Strona w budowie...</h3>
+    <h1> Napisz: </h1>
+    <form>
+        <div class="mb-3">
+            <label for="firstNameInput" class="form-label">Imię</label>
+            <input type="text" class="form-control" id="firstNameInput">
+        </div>
+        <div class="mb-3">
+            <label for="lastNameInput" class="form-label">Nazwisko</label>
+            <input type="text" class="form-control" id="lastNameInput">
+        </div>
+        <div class="mb-3">
+            <label for="emailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailInput">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br></br>
     <a href="{% url 'home' %}">Powrót do strony głównej...</a>
 {% endblock content %}
