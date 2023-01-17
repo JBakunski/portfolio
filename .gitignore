@@ -2,6 +2,8 @@
 __pycache__/
 infos/__pycache__/
 portfolio/__pycache__/
+sessions/__pycache__/
+posts/__pycache__/
 *.py[cod]
 
 # C extensions
@@ -47,7 +49,7 @@ coverage.xml
 # Django stuff:
 *.log
 *.pot
-db.sqlite3
+
 
 # Sphinx documentation
 docs/_build/
