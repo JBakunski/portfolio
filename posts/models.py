@@ -14,8 +14,14 @@ class Post(models.Model):
         on_delete=models.CASCADE
     )
 
+    def __str__(self):
+        return f"Title: {self.title}\n Content: {self.content}\n Created: {self.created}\n Modified: {self.modified}"
+
 
 class Author(models.Model):
     nick = models.CharField(max_length=100)
     email = models.EmailField()
     bio = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return f"Nick: {self.nick}, Email: {self.email}\n Bio:{self.bio}"
