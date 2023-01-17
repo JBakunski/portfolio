@@ -58,3 +58,6 @@ docs/_build/
 
 # Virtual environment
 .venv/
+
+# Database
+db.sqlite3

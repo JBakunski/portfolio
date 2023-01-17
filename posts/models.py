@@ -15,7 +15,7 @@ class Post(models.Model):
     )
 
     def __str__(self):
-        return f"Title: {self.title}\n Content: {self.content}\n Created: {self.created}\n Modified: {self.modified}"
+        return f"Title: {self.title}\nContent: {self.content}\nCreated: {self.created}\nModified: {self.modified}"
 
 
 class Author(models.Model):
@@ -24,4 +24,4 @@ class Author(models.Model):
     bio = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return f"Nick: {self.nick}, Email: {self.email}\n Bio:{self.bio}"
+        return f"Nick: {self.nick}, Email: {self.email}\nBio:{self.bio}"
