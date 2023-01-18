@@ -2,11 +2,11 @@
 {% block title %} {{ title }} {% endblock title %}
 {% block content %}
     <ul class="list-group">
-        {% for p in posts %}
-            <li class="list-group-item"><a href="{% url 'posts:details' p.id %}"
+        {% for a in authors %}
+            <li class="list-group-item"><a href="{% url 'posts:author_details' a.id %}"
                                            class="btn btn-secondary"
                                            tabindex="-1" role="button"
-                                           aria-disabled="false">{{ p.title }}</a></li>
+                                           aria-disabled="false">{{ a.nick }}</a></li>
         {% endfor %}
     </ul>
     </br>

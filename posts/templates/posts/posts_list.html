@@ -1,0 +1,15 @@
+{% extends "infos/base.html" %}
+{% block title %} {{ title }} {% endblock title %}
+{% block content %}
+    <ul class="list-group">
+        {% for p in posts %}
+            <li class="list-group-item"><a href="{% url 'posts:post_details' p.id %}"
+                                           class="btn btn-secondary"
+                                           tabindex="-1" role="button"
+                                           aria-disabled="false">{{ p.title }}</a></li>
+        {% endfor %}
+    </ul>
+    </br>
+    <a href="{% url 'home' %}" class="btn btn-primary" tabindex="-1"
+       role="button" aria-disabled="true">Powrót do strony głównej...</a>
+{% endblock content %}
