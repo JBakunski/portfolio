@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import Author
+from .models import Author, Post
 
 
 class AuthorForm(ModelForm):
@@ -7,3 +7,8 @@ class AuthorForm(ModelForm):
         model = Author
         fields = '__all__'
 
+
+class PostForm(ModelForm):
+    class Meta:
+        model = Post
+        fields = ['title', 'content', 'author']

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from posts.models import Post, Author
-from posts.forms import AuthorForm
+from posts.forms import AuthorForm, PostForm
 from django.views.decorators.csrf import requires_csrf_token
 
 
@@ -30,3 +30,10 @@ def add_author(request):
     if form.is_valid():
         form.save()
     return render(request, template_name='posts/author_form.html', context={'form': form})
+
+
+def add_post(request):
+    form = PostForm(request.POST)
+    if form.is_valid():
+        form.save()
+    return render(request, template_name='posts/post_form.html', context={'form': form})

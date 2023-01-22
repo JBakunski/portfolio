@@ -1,6 +1,10 @@
 {% extends "infos/base.html" %}
 {% block title %} {{ title }} {% endblock title %}
 {% block content %}
+    <a href="{% url 'posts:post_form' %}" class="btn btn-secondary" tabindex="-1"
+       role="button" aria-disabled="true">Dodaj nowy post</a>
+    </br>
+    </br>
     <ul class="list-group">
         {% for p in posts %}
             <li class="list-group-item"><a href="{% url 'posts:post_details' p.id %}"
