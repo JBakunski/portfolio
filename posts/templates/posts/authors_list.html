@@ -1,0 +1,18 @@
+{% extends "infos/base.html" %}
+{% block title %} {{ title }} {% endblock title %}
+{% block content %}
+    <a href="{% url 'posts:author_form' %}" class="btn btn-secondary" tabindex="-1"
+       role="button" aria-disabled="true">Dodaj nowego autora</a>
+    </br>
+    </br>
+    <ul class="list-group">
+        {% for a in authors %}
+            <li class="list-group-item"><a href="{% url 'posts:author_details' a.id %}"
+                                           tabindex="-1" role="button"
+                                           aria-disabled="false">{{ a.nick }}</a></li>
+        {% endfor %}
+    </ul>
+    </br>
+    <a href="{% url 'home' %}" class="btn btn-primary" tabindex="-1"
+       role="button" aria-disabled="true">Powrót do strony głównej...</a>
+{% endblock content %}

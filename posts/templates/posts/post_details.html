@@ -1,0 +1,29 @@
+{% extends "infos/base.html" %}
+{% block title %} {{ title }} {% endblock title %}
+{% block content %}
+    <table class="table">
+       <tr>
+           <th>Author</th>
+           <td>{{ post.author.nick }}</td>
+       </tr>
+       <tr>
+           <th>Title</th>
+           <td>{{ post.title }}</td>
+       </tr>
+       <tr>
+           <th>Content</th>
+           <td>{{ post.content }}</td>
+       </tr>
+       <tr>
+           <th>Created:</th>
+           <td>{{ post.created }}</td>
+       </tr>
+       <tr>
+           <th>Last modified</th>
+           <td>{{ post.modified }}</td>
+       </tr>
+   </table>
+    </br>
+    <a href="{% url 'posts:posts_list' %}" class="btn btn-primary" tabindex="-1"
+       role="button" aria-disabled="true">Powrót do strony głównej...</a>
+{% endblock content %}

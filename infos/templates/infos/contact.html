@@ -19,5 +19,6 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <br></br>
-    <a href="{% url 'home' %}">Powrót do strony głównej...</a>
+    <a href="{% url 'home' %}" class="btn btn-primary" tabindex="-1"
+       role="button" aria-disabled="true">Powrót do strony głównej...</a>
 {% endblock content %}

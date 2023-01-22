@@ -24,4 +24,4 @@ class Author(models.Model):
     bio = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return f"Nick: {self.nick}, Email: {self.email}\nBio:{self.bio}"
+        return f"Nick: {self.nick}, Email: {self.email}"
