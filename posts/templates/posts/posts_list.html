@@ -4,7 +4,6 @@
     <ul class="list-group">
         {% for p in posts %}
             <li class="list-group-item"><a href="{% url 'posts:post_details' p.id %}"
-                                           class="btn btn-secondary"
                                            tabindex="-1" role="button"
                                            aria-disabled="false">{{ p.title }}</a></li>
         {% endfor %}

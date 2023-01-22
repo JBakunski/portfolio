@@ -1,5 +1,8 @@
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
 from posts.models import Post, Author
+from posts.forms import AuthorForm
+from django.views.decorators.csrf import requires_csrf_token
 
 
 def posts_list(request):
@@ -20,3 +23,10 @@ def authors_list(request):
 def author_details(request, id):
     author = Author.objects.get(id=id)
     return render(request, template_name='posts/author_details.html', context={'author': author, 'title': 'Author details'})
+
+
+def add_author(request):
+    form = AuthorForm(request.POST)
+    if form.is_valid():
+        form.save()
+    return render(request, template_name='posts/author_form.html', context={'form': form})
