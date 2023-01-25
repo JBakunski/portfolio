@@ -1,12 +1,18 @@
 from django.shortcuts import render
 from posts.models import Post, Author
 from posts.forms import AuthorForm, PostForm
+from django.core.paginator import Paginator
 
 
 def posts_list(request):
     posts = Post.objects.all()
+    paginator = Paginator(posts, 5)
+    page_number = request.GET.get('page')
+    posts = paginator.get_page(page_number)
+    pages = paginator.page_range
     return render(request=request, template_name='posts/posts_list.html', context={'posts': posts,
-                                                                                   'title': 'Posts list'})
+                                                                                   'title': 'Posts list',
+                                                                                   'pages': pages})
 
 
 def post_details(request, id):
@@ -16,7 +22,13 @@ def post_details(request, id):
 
 def authors_list(request):
     authors = Author.objects.all()
-    return render(request, template_name='posts/authors_list.html', context={'authors': authors, 'title': 'Authors list'})
+    paginator = Paginator(authors, 5)
+    page_number = request.GET.get('page')
+    authors = paginator.get_page(page_number)
+    pages = paginator.page_range
+    return render(request, template_name='posts/authors_list.html', context={'authors': authors,
+                                                                             'title': 'Authors list',
+                                                                             'pages': pages})
 
 
 def author_details(request, id):

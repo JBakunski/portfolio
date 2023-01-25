@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Post(models.Model):
+    class Meta:
+        ordering = ['-id']
+
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True, null=True)
     created = models.DateTimeField(auto_now=True)
@@ -17,6 +20,9 @@ class Post(models.Model):
 
 
 class Author(models.Model):
+    class Meta:
+        ordering = ['id']
+
     nick = models.CharField(max_length=100)
     email = models.EmailField()
     bio = models.TextField(blank=True, null=True)
