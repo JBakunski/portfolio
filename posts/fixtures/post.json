@@ -1,0 +1,124 @@
+[
+{
+    "model": "posts.post",
+    "pk": 1,
+    "fields": {
+        "title": "The Cheesecake Factory: Use humor and great photos",
+        "content": "The Cheesecake Factory is an American chain of restaurants, localized around the world. If youre not familiar with it, you may recognize the name from the hit series The Big Bang Theory. They have a large following on Facebook and regularly post about food thats on their menu. These posts get a lot of engagement, due to the great images used and the funny text accompanying them.",
+        "created": "2023-01-25T12:41:43.172Z",
+        "modified": "2023-01-25T12:41:43.180Z",
+        "author": 2
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 2,
+    "fields": {
+        "title": "Google: Share interesting customer stories",
+        "content": "Google Maps is one of those things that doesnt need much explaining. Most people know what it does, it helps you get from A to B. It can even find you a faster route when theres loads of traffic up ahead. But a few days back, Google shared an interesting customer story on Twitter.",
+        "created": "2023-01-25T12:41:43.180Z",
+        "modified": "2023-01-25T12:41:43.180Z",
+        "author": 1
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 3,
+    "fields": {
+        "title": "Tonys Chocolonely: Show people whats happening",
+        "content": "Tony Chocolonely is a Dutch company that sells chocolate. Their chocolate bars are quite popular and their mission is to make chocolate 100% slave-free. As they are opinionated, which fits their mission, they often get a lot of engagement on their social posts.",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 1
+    }
+},
+{
+    "model": "posts.post",
+    "pk": 4,
+    "fields": {
+        "title": "The Clay Creative Co: Increase followers with giveaways",
+        "content": "Now, this is an online store youve probably not heard of, as its a small business from the UK that sells its earrings through Etsy. But this post on Instagram is a great example of how a small online business can grow its number of followers. By doing a simple giveaway!",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 3
+    }
+},
+    {
+    "model": "posts.post",
+    "pk": 5,
+    "fields": {
+        "title": "Titla 5",
+        "content": "Some content",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 5
+    }
+},
+    {
+    "model": "posts.post",
+    "pk": 6,
+    "fields": {
+        "title": "Titla 6",
+        "content": "Some content",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 8
+    }
+},
+    {
+    "model": "posts.post",
+    "pk": 7,
+    "fields": {
+        "title": "Titla 7",
+        "content": "Some content",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 8
+    }
+},
+    {
+    "model": "posts.post",
+    "pk": 8,
+    "fields": {
+        "title": "Titla 8",
+        "content": "Some content",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 10
+    }
+},
+    {
+    "model": "posts.post",
+    "pk": 9,
+    "fields": {
+        "title": "Titla 9",
+        "content": "Some content",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 7
+    }
+},
+    {
+    "model": "posts.post",
+    "pk": 10,
+    "fields": {
+        "title": "Titla 10",
+        "content": "Some content",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 2
+
+    }
+},
+    {
+    "model": "posts.post",
+    "pk": 11,
+    "fields": {
+        "title": "Titla 11",
+        "content": "Some content",
+        "created": "2023-01-25T12:41:43.181Z",
+        "modified": "2023-01-25T12:41:43.181Z",
+        "author": 5
+    }
+}
+]

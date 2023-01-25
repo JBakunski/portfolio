@@ -1,0 +1,92 @@
+[
+{
+    "model": "posts.author",
+    "pk": 1,
+    "fields": {
+        "nick": "Rutek",
+        "email": "dobromil.rutkowski@jourrapide.com",
+        "bio": null
+    }
+},
+{
+    "model": "posts.author",
+    "pk": 2,
+    "fields": {
+        "nick": "Jedrek",
+        "email": "jedrzejadmaski@armyspy.com",
+        "bio": "When you write a first-person bio you're telling your story directly to your audience. This shows them that you crafted your bio with your personal experience and opinions."
+    }
+},
+{
+    "model": "posts.author",
+    "pk": 3,
+    "fields": {
+        "nick": "Nowa",
+        "email": "wislawa.nowak@teleworm.us",
+        "bio": null
+    }
+},
+    {
+    "model": "posts.author",
+    "pk": 4,
+    "fields": {
+        "nick": "nick 4",
+        "email": "nick4@sample.com",
+        "bio": "Some biography"
+    }
+},
+       {
+    "model": "posts.author",
+    "pk": 5,
+    "fields": {
+        "nick": "nick 5",
+        "email": "nick5@sample.com",
+        "bio": null
+    }
+},
+       {
+    "model": "posts.author",
+    "pk": 6,
+    "fields": {
+        "nick": "nick 6",
+        "email": "nick6@sample.com",
+        "bio": null
+    }
+},
+       {
+    "model": "posts.author",
+    "pk": 7,
+    "fields": {
+        "nick": "nick 7",
+        "email": "nick7@sample.com",
+        "bio": "Some biography"
+    }
+},
+       {
+    "model": "posts.author",
+    "pk": 8,
+    "fields": {
+        "nick": "nick 8",
+        "email": "nick8@sample.com",
+        "bio": null
+    }
+},
+       {
+    "model": "posts.author",
+    "pk": 9,
+    "fields": {
+        "nick": "nick 9",
+        "email": "nick9@sample.com",
+        "bio": null
+    }
+},
+          {
+    "model": "posts.author",
+    "pk": 10,
+    "fields": {
+        "nick": "nick 10",
+        "email": "nick10@sample.com",
+        "bio": "Some biography"
+    }
+}
+]

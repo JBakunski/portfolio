@@ -2,8 +2,6 @@ from django.contrib import admin
 from posts.models import Author, Post
 
 
-# Register your models here.
-
 class AuthorAdmin(admin.ModelAdmin):
     list_display = ['nick', 'email']
 
