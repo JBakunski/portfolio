@@ -2,11 +2,12 @@ from django.shortcuts import render
 from posts.models import Post, Author
 from posts.forms import AuthorForm, PostForm
 from django.core.paginator import Paginator
+from portfolio.settings import DEFAULT_PAGE_SIZE
 
 
 def posts_list(request):
     posts = Post.objects.all()
-    paginator = Paginator(posts, 5)
+    paginator = Paginator(posts, DEFAULT_PAGE_SIZE)
     page_number = request.GET.get('page')
     posts = paginator.get_page(page_number)
     pages = paginator.page_range
@@ -22,7 +23,7 @@ def post_details(request, id):
 
 def authors_list(request):
     authors = Author.objects.all()
-    paginator = Paginator(authors, 5)
+    paginator = Paginator(authors, DEFAULT_PAGE_SIZE)
     page_number = request.GET.get('page')
     authors = paginator.get_page(page_number)
     pages = paginator.page_range

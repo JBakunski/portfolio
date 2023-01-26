@@ -12,7 +12,8 @@ class Post(models.Model):
 
     author = models.ForeignKey(
         'posts.Author',
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        blank=False
     )
 
     def __str__(self):
@@ -23,8 +24,8 @@ class Author(models.Model):
     class Meta:
         ordering = ['id']
 
-    nick = models.CharField(max_length=100)
-    email = models.EmailField()
+    nick = models.CharField(max_length=100, blank=False)
+    email = models.EmailField(blank=False)
     bio = models.TextField(blank=True, null=True)
 
     def __str__(self):
