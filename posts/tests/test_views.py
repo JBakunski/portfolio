@@ -28,3 +28,21 @@ class PostViewsTest(TestCase):
         self.assertEqual(len(response.context['posts']), 1)
         self.assertIn('aria-disabled="false">Title 1',
                       response.content.decode())
+
+
+class AuthorPaginationViewsTest(TestCase):
+    fixtures = ['author.json']
+
+    def setUp(self):
+
+        self.client = Client()
+
+    def test_given_page(self):
+        response = self.client.get("/posts/authors/list", {'page':2})
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.context['authors'][0].nick, 'nick 6')
+
+    def test_empty_page(self):
+        response = self.client.get("/posts/authors/list")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.context['authors'][0].nick, 'Rutek')
