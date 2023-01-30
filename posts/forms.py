@@ -8,6 +8,7 @@ class AuthorForm(ModelForm):
         fields = '__all__'
 
 
+
 class PostForm(ModelForm):
     class Meta:
         model = Post
